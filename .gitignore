@@ -20,6 +20,17 @@ pip-delete-this-directory.txt
 *.ipynb_checkpoints
 **/.ipynb_checkpoints/
 
+# Secrets and API keys
+.env
+.env.*
+*.key
+*.pem
+*.token
+ibm_quantum_api*
+*apikey*
+*api_key*
+*secret*
+
 # Qiskit
 *.qasm
 *.qpy
