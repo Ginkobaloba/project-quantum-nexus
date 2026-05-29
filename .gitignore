@@ -58,3 +58,11 @@ htmlcov/
 # Distribution
 *.tar.gz
 *.whl
+
+# ---------------------------------------------------------------
+# Defensive: prevent accidental misfile of unrelated personal files.
+# A divorce-legal artifact (Witness List_Mattick.docx) was found
+# misfiled at this repo root on 2026-05-29 and relocated to
+# C:\dev\divorce-legal\. Leading slash anchors to repo root only.
+# ---------------------------------------------------------------
+/Witness List_Mattick.docx
