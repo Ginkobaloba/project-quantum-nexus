@@ -18,8 +18,8 @@ Convert to notebook with: jupyter nbconvert --to notebook 01_getting_started.py
 # TODO: Convert this to a proper .ipynb once the dependencies are installed.
 
 # Quick smoke test -- uncomment when deps are available:
-# from quantum_nexus.data.simulated_sensors import generate_normal_data, BuildingConfig
-# config = BuildingConfig(num_zones=3)
-# data = generate_normal_data(config, num_timesteps=10, seed=42)
-# print(data.head())
-# print(f"Generated {len(data)} timesteps across {config.num_zones} zones")
+from quantum_nexus.data.simulated_sensors import generate_normal_data, BuildingConfig
+config = BuildingConfig(num_zones=3)
+data = generate_normal_data(config, num_timesteps=10, seed=42)
+print(data.head())
+print(f"Generated {len(data)} timesteps across {config.num_zones} zones")
